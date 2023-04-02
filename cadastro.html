@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de Cliente - Cinema</title>
+</head>
+<body>
+	<header>
+		<h1>Cinema</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Filmes em cartaz</a></li>
+				<li><a href="detalhes.html">Detalhes do filme</a></li>
+				<li><a href="cadastro.html">Cadastro de cliente</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h2>Cadastro de informações do cliente</h2>
+		<form>
+			<label for="data_nascimento">Data de nascimento:</label>
+			<input type="date" id="data_nascimento" name="data_nascimento"><br>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br>
+
+			<label for="telefone">Telefone:</label>
+			<input type="tel" id="telefone" name="telefone"><br>
+
+			<label for="mes_adesao">Mês de adesão:</label>
+			<select id="mes_adesao" name="mes_adesao">
+				<option value="jan">Janeiro</option>
+				<option value="fev">Fevereiro</option>
+				<option value="mar">Março</option>
+				<option value="abr">Abril</option>
+				<option value="mai">Maio</option>
+				<option value="jun">Junho</option>
+				<option value="jul">Julho</option>
+				<option value="ago">Agosto</option>
+				<option value="set">Setembro</option>
+				<option value="out">Outubro</option>
+				<option value="nov">Novembro</option>
+				<option value="dez">Dezembro</option>
+			</select><br>
+
+			<label for="num_filmes">Número de filmes que o cliente pretende ver semanalmente:</label>
+			<input type="number" name="num_filmes" min="1" max="7" required><br>
+
+			<label for="cor_preferencia">Cor de preferência para visualização da área do cliente:</label>
+			<input type="color" id="cor_preferencia" name="cor_preferencia"><br>
+
+			<label for="pag_pessoal">Endereço da página pessoal:</label>
+			<input type="url" id="pag_pessoal" name="pag_pessoal"><br>
+
+			<label for="data_hora_cupom">Data e hora preferidas para utilizar o cupom de desconto da primeira compra:</label>
+			<input type="datetime-local" id="data_hora_cupom" name="data_hora_cupom"><br>
+
+			
+			
+  <label for="pref_genero">Preferência de gênero de filmes:<br></label>
+  <input type="range" name="acao" min="0" max="10" step="1" value="5"> Ação<br>
+  <input type="range" name="drama" min="0" max="10" step="1" value="5"> Drama<br>
+  <input type="range" name="romance" min="0" max="10" step="1" value="5"> Romance<br>
+  <input type="range" name="comedia" min="0" max="10" step="1" value="5"> Comédia<br>
+  <input type="range" name="suspense" min="0" max="10" step="1" value="5"> Suspense<br>
+  <input type="range" name="terror" min="0" max="10" step="1" value="5"> Terror<br>
+  <input type="range" name="ficcao_cientifica" min="0" max="10" step="1" value="5"> Ficção científica<br>
+  <br>
+  <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
